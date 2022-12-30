@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6f6fc;
+}
+.app{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.left-container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#dots{
+    display: flex;
+    margin-left: 0rem;
+}
+.right-body-container{
+    margin-left: 1rem;
+}
+
+.item{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0 1rem;
+    margin:1rem 1rem 1rem 0;
+    cursor: pointer;
+}
+.fileDetails{
+margin-bottom: 0.5rem;
+}
+.fileDetails h2{
+    margin-bottom: 0.5rem;
+}
+.fileDetails p ,span{
+  padding: 0.5rem 0;
+}
+
+.left-container > img{
+    width: 400px;
+    height: 350px;
+}
+.logo > img{
+    position: absolute;
+    bottom:3.5rem;
+    width: 80px;
+    left: 44%;
+    height: auto;
+}
+
+.right-container{
+width: 50%;
+height: 50%;
+
+}
+.right-container > h1 {
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'UPLOAD LOGO';
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+  
+
+.uploadBtn{
+    background-color: #4ab5ef;
+    color: #FFF;
+    border: none;
+    width: 24vw;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+}
+#upload_file{
+   border: none;
+}
+#btnLogo{
+    margin: 0 1rem;
+}
+.cancelBtn{
+    color: #202020;
+    font-size: 24px;
+    cursor: pointer;
+}
