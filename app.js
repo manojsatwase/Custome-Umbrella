@@ -34,11 +34,11 @@
             item.addEventListener('click',function(e){
                 loading = true;
                 if(loading){
-                    mainImage.src = './images/loader_icon.svg';
+                    mainImage.src = './loader_icon.svg';
                }
             if( ['blue-umbrella','pink_umbrella','yellow_umbrella'].includes(item.id)){
                 setTimeout(()=>{
-                    mainImage.src = `./images/${item.id}.png`;
+                    mainImage.src = `./${item.id}.png`;
                 },1000)
                 loading = false;
             }
@@ -54,7 +54,7 @@
          logo.appendChild(logoImg);
         
          if(upload_file.files.length > 0){
-         logoImg.src = './images/'+upload_file.files[0].name;
+         logoImg.src = './'+upload_file.files[0].name;
          }
          upload_file.style.display = 'none'
        });
@@ -75,7 +75,7 @@
             cancelBtn.textContent = '';
         })
          if(upload_file.files.length > 0)
-         logoImg.src = './images/'+upload_file.files[0].name;
+         logoImg.src = './'+upload_file.files[0].name;
          else
          upload_file.style.display = 'none'
        });
