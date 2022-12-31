@@ -12,7 +12,6 @@ body{
   display: flex;
   justify-items: center;
   align-items: center;
-  border: 1px solid #ccc;
   width: 90vw;
   height: 100vh;
   margin: 0 auto;
